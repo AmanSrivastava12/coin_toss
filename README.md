@@ -1,1 +1,1 @@
-# coin_toss
+#coin-toss
