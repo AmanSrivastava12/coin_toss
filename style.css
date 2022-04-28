@@ -11,7 +11,11 @@ body {
 .container {
   background-color: #ffffff;
   width: 400px;
-  padding: 35px;
+  height: 550px;
+  padding-top: 5px;
+  padding-right: 35px;
+  padding-bottom: 35px;
+  padding-left: 35px;
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
@@ -25,14 +29,39 @@ body {
   display: flex;
   color: #101020;
   font-weight: 500;
-  padding: 20px;
+  padding: 15px;
   border-radius: 25px;
-  margin-bottom: 40px;
-  margin-top: 55px;
-  box-shadow: 0 0 2px 2px rgb(255, 243, 112);
+  margin-bottom: 30px;
+  margin-top: 35px;
+  box-shadow: 0 0 2px 2px rgb(222, 209, 74);
+}
+.stats p:first-child {
+  margin-left: 10%;
 }
 .stats p:nth-last-child(1) {
-  margin-left: 50%;
+  margin-left: 35%;
+}
+.winlose {
+  display: flex;
+  color: #584a05;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 25px;
+  margin-bottom: 15px;
+  margin-top: 30px;
+  box-shadow: 0 0 2px 2px rgb(222, 209, 74);
+}
+.winlose p:first-child {
+  margin-left: 21%;
+}
+.winlosenumber {
+  display: block;
+  color: #2c2605;
+  font-weight: 500;
+  padding: 5px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  text-align: center;
 }
 .coin {
   height: 150px;
@@ -103,7 +132,9 @@ body {
   background-color: #785a1d;
   color: white;
 }
-#flip-button:disabled {
+#flip-button:disabled,
+#heads-button:disabled,
+#tails-button:disabled {
   background-color: #e1e0ee;
   border-color: #e1e0ee;
   color: #101020;
